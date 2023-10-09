@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AFL Teams Players Lookup</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+<body>
+    <div class="navbar">
+        AFL Teams Players Lookup
+    </div>
+    
+    <div class="container">
+    <!--  <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for a player...">
+            <button onclick="searchPlayers()">Search</button>
+        </div> -->
+        
+        <div class="dropdowns">
+            <select id="team1">
+                <option value="" disabled selected>Select Team 1</option>
+            </select>
+            <select id="team2">
+                <option value="" disabled selected>Select Team 2</option>
+            </select>
+            <button onclick="findPlayers()">Find Players</button>
+        </div>
+    
+        <ul id="searchResults"></ul>
+        <ul id="playerList"></ul>
+    </div>
+    
+
+    <!-- Link to the app.js file -->
+    <script src="app.js"></script>
+</body>
+</html>
