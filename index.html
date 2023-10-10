@@ -19,14 +19,25 @@
         </div> -->
         
         <div class="dropdowns">
-            <select id="team1">
-                <option value="" disabled selected>Select Team 1</option>
-            </select>
-            <select id="team2">
-                <option value="" disabled selected>Select Team 2</option>
-            </select>
-            <button onclick="findPlayers()">Find Players</button>
+            <div class="team-selection">
+                <select id="team1" onchange="updateTeamImage('team1')">
+                    <option value="" disabled selected>Select Team 1</option>
+                </select>
+                <img id="team1Image" src="" alt="Team 1 Logo" style="display: none;">
+            </div>
+        
+            <div class="team-selection">
+                <select id="team2" onchange="updateTeamImage('team2')">
+                    <option value="" disabled selected>Select Team 2</option>
+                </select>
+                <img id="team2Image" src="" alt="Team 2 Logo" style="display: none;">
+            </div>
+            
+            <button class="find-players-btn" onclick="findPlayers()">Find Players</button>
+
         </div>
+        
+        
     
         <ul id="searchResults"></ul>
         <ul id="playerList"></ul>

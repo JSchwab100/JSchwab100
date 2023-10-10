@@ -5,12 +5,52 @@ body {
     padding: 0;
 }
 
+.find-players-btn {
+    flex-shrink: 0; /* Prevent the button from shrinking */
+    flex-grow: 0;   /* Prevent the button from growing */
+    align-self: center; /* Center the button vertically */
+}
+
+
 .navbar {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 14px 16px;
     font-size: 24px;
+}
+
+.dropdowns {
+    display: flex;
+    justify-content: center;  /* Centers the contents horizontally */
+}
+
+.team-selection {
+    display: flex;
+    flex-direction: column;  /* Stack dropdown above the image */
+    align-items: center;     /* Center the dropdown and image horizontally */
+    margin: 0 10px;          /* Space between Team 1 and Team 2 selections */
+}
+
+.team-selection img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 10px;       /* Space between the dropdown and the image */
+}
+
+
+
+.seasons-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative; 
+}
+
+.team2-seasons {
+    position: absolute;
+    right: 50%;  
+    transform: translateX(50%);  
 }
 
 .container {
@@ -26,11 +66,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-}
-
-.dropdowns {
-    display: flex;
-    justify-content: space-between;
 }
 
 button {
